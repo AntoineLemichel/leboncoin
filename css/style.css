@@ -1,0 +1,108 @@
+/*
+==============================================================
+===================== CSS STRUCTURE ==========================
+==============================================================
+*/
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans",sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #5a73bd;
+}
+
+/*
+==============================================================
+===================== MEDIA QUERIES TO LARGE DESKTOP =========
+==============================================================
+*/
+
+@media screen and (min-width: 1200px) {
+  /*
+  ========================== Style for header and navigation menu, on the top page ================================ 
+   */
+  nav {
+    margin-top: -20px;
+    background-color: #f36a2a;
+    text-align: center;
+  }
+  .menu ul li h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-right: 30px;
+  }
+  .menu ul li{
+    text-align: center;
+    display: inline-block;
+  }
+  .menu ul li a {
+    color: white;
+    padding-left: 5px;
+    font-weight: 500;
+    padding-right: 5px;
+  }
+  .connexion {
+    width: 157px;
+    height: 60px;
+    vertical-align: baseline;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    line-height: 60px;
+    margin-left: 15%;
+  }
+  strong {
+    color: #f36a2a;
+  }
+  .left-side {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;
+    
+  }
+  .left-side input
+  {
+    width: 334px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .left-side .deposite {
+    background-color: #4c94ef;
+    border:none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  .left-side .searchme {
+    color: #4c94ef;
+    border: 1.5px solid #4c94ef;
+  }
+
+
+  .middle-side {
+    text-align: center;
+  }
+
+
+  .right-side {
+    text-align: right;
+    margin-right: 5%;
+  }
+}
+
+/* @screen (min-width: 300px){
+
+} */

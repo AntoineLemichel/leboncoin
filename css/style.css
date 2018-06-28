@@ -34,6 +34,10 @@ a {
   /*
   ========================== Style for header and navigation menu, on the top page ================================ 
    */
+   .main {
+     width: 90%;
+     margin: auto;
+   }
   nav {
     margin-top: -20px;
     background-color: #f36a2a;
@@ -69,7 +73,7 @@ a {
   .left-side {
     display: inline-block;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 0%;
     
   }
   .left-side input
@@ -78,6 +82,8 @@ a {
     height: 40px;
     border-radius: 4px;
     font-weight: bold;
+    position: absolute;
+    left: 5%;
   }
   .left-side .deposite {
     background-color: #4c94ef;
@@ -85,22 +91,37 @@ a {
     border-radius: 4px;
     color: white;
     font-weight: bold;
+    top: 40%;
   }
   .left-side .searchme {
     color: #4c94ef;
     border: 1.5px solid #4c94ef;
+    top: 30%;
   }
-
-
+  .left-side p {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    text-align: justify;
+  }
   .middle-side {
     text-align: center;
   }
-
-
+  .map img {
+    margin: auto;
+  }
   .right-side {
     text-align: right;
     margin-right: 5%;
+    position: absolute;
+    right: 5%;
+    top: 10%;
   }
+
+  /* 
+  ==================================Style before footer ===============================
+  */
+  
 }
 
 /* @screen (min-width: 300px){

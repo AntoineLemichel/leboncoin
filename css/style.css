@@ -121,7 +121,57 @@ a {
   /* 
   ==================================Style before footer ===============================
   */
+  .before-footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  .before-footer h2 {
+    border-bottom: 1px solid grey;
+    color: #5a73bd;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+    padding: 0 0 5px 0;
+  }
+  .before-footer ul li a{
+    text-align: left;
+    margin: auto;
+    font-size: 0.7rem;
+  }
   
+  .before-footer ul{
+    width: 200px;
+    line-height: 15px;
+    align-items: center;
+  }
+  .footer-main {
+    background-color: #474747;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+  .footer-main ul li a{
+    color: white;
+  }
+  .footer-main ul {
+    width: 400px;
+  }
+  .footer-main ul select {
+    width: 400px;
+    border: none;
+    height: 40px;
+  }
+  .footer-main ul select option {
+    appearance: none;
+  }
+  .footer-main h3 {
+    color: white;
+    border-bottom: 1px solid grey;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+    padding: 0 0 5px 0;
+  }
 }
 
 /* @screen (min-width: 300px){

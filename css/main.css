@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -27,13 +27,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -41,12 +41,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -61,7 +61,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -69,9 +69,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -79,7 +79,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -87,31 +87,86 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "OpenSans", sans-serif;
+}
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
 
+ul,
+li {
+  list-style-type: none;
+}
 
+a {
+  text-decoration: none;
+  color: #5a73bd;
+}
 
+.main {
+  width: 90%;
+  margin: auto;
+}
+strong {
+  color: #f36a2a;
+}
 
-
-
-
-
-
-
-
-
-
-
+nav {
+  margin-top: -20px;
+  background-color: #f36a2a;
+  text-align: center;
+}
+.menu ul li a {
+  visibility: hidden;
+}
+.menu h1 {
+  visibility: visible;
+}
+.left-side input {
+  width: 50%;
+  height: 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+}
+.left-side .deposite {
+  background-color: #4c94ef;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+.left-side .searchme {
+  color: #4c94ef;
+  border: 1.5px solid #4c94ef;
+}
+.middle-side {
+  width: 90%;
+  margin: auto;
+}
+.middle-side img {
+  margin-top: 10%;
+  width: 80%;
+  margin: auto;
+}
 
 /* ==========================================================================
    Helper classes
@@ -122,7 +177,7 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 /*
@@ -135,15 +190,16 @@ textarea {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
 }
 
 /*
@@ -154,13 +210,13 @@ textarea {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
 }
 
 /*
@@ -168,7 +224,7 @@ textarea {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -185,12 +241,14 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -199,20 +257,149 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-   /* // Medium devices (tablets, 768px and up) */
-   @media (min-width: 768px) {  }
-   
-   /* // Large devices (desktops, 992px and up) */
-   @media (min-width: 992px) {  }
-   
-   /* Extra large devices (large desktops, 1200px and up) */
-   @media (min-width: 1200px) {  }
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  .menu ul li h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-right: 30px;
+  }
+  .menu ul li {
+    text-align: center;
+    display: inline-block;
+  }
+  .menu ul li a {
+    color: white;
+    padding-left: 5px;
+    font-weight: 500;
+    padding-right: 5px;
+  }
+  .connexion {
+    width: 157px;
+    height: 60px;
+    vertical-align: baseline;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    line-height: 60px;
+    margin-left: 15%;
+  }
+  .left-side {
+    display: inline-block;
+    text-align: center;
+  }
+  .left-side input {
+    width: 334px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    position: absolute;
+    left: 5%;
+  }
+  .left-side .deposite {
+    background-color: #4c94ef;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    top: 40%;
+  }
+  .left-side .searchme {
+    color: #4c94ef;
+    border: 1.5px solid #4c94ef;
+    top: 30%;
+  }
+  .left-side p {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    text-align: justify;
+  }
+  .middle-side {
+    text-align: center;
+  }
+  .middle-side>p {
+    margin-top: 15%;
+  }
+  .map img {
+    margin: auto;
+  }
+  .right-side {
+    text-align: right;
+    margin-right: 5%;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+  }
+  /* 
+    ==================================Style before footer ===============================
+    */
+  .before-footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 10%;
+  }
+  .before-footer h2 {
+    border-bottom: 1px solid grey;
+    color: #5a73bd;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+    padding: 0 0 5px 0;
+  }
+  .before-footer ul li a {
+    text-align: left;
+    margin: auto;
+    font-size: 0.7rem;
+  }
+  .before-footer ul {
+    width: 200px;
+    line-height: 15px;
+    align-items: center;
+  }
+  .footer-main {
+    background-color: #474747;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+  }
+  .footer-main ul li a {
+    color: white;
+  }
+  .footer-main ul {
+    width: 400px;
+  }
+  .footer-main ul select {
+    width: 400px;
+    border: none;
+    height: 40px;
+  }
+  .footer-main ul select option {
+    appearance: none;
+  }
+  .footer-main h3 {
+    color: white;
+    border-bottom: 1px solid grey;
+    font-size: 0.7rem;
+    margin-bottom: 5%;
+    padding: 0 0 5px 0;
+  }
+}
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -222,71 +409,61 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
